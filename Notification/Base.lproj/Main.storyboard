@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Notification" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPy-y0-CgE">
+                                <rect key="frame" x="20" y="430.5" width="374" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="aZl-rO-noG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YmA-yE-ck9">
+                                <rect key="frame" x="20" y="495.5" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="YUs-t0-H9G"/>
+                                </constraints>
+                                <state key="normal" title="SendNotifcation"/>
+                                <connections>
+                                    <action selector="notificationActionButton:" destination="AF2-sf-a03" eventType="touchUpInside" id="Ifj-zb-0Rl"/>
+                                    <action selector="notificationActionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="omZ-zp-adh"/>
+                                    <segue destination="TaH-kz-JlY" kind="show" id="f6h-7j-8zb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lPy-y0-CgE" secondAttribute="trailing" constant="20" id="0ew-X1-yYf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YmA-yE-ck9" secondAttribute="trailing" constant="20" id="1Qg-aY-of6"/>
+                            <constraint firstItem="lPy-y0-CgE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Rj-76-mdJ"/>
+                            <constraint firstItem="YmA-yE-ck9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dhM-OG-gae"/>
+                            <constraint firstItem="lPy-y0-CgE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="eXP-Ta-m4C"/>
+                            <constraint firstItem="YmA-yE-ck9" firstAttribute="top" secondItem="lPy-y0-CgE" secondAttribute="bottom" constant="30" id="vb7-Nw-vup"/>
+                            <constraint firstItem="lPy-y0-CgE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zO6-OY-6TA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="sentNotificationLabel" destination="lPy-y0-CgE" id="5o6-wo-W44"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="AF2-sf-a03" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="bo6-Ba-Vnc">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TaH-kz-JlY" customClass="SecondViewController" customModule="Notification" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kNe-cl-adc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notification Received!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aTS-E0-WMI">
+                                <rect key="frame" x="20" y="403.5" width="374" height="35"/>
+                                <color key="backgroundColor" red="0.70980392160000005" green="0.59215686270000001" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="5ut-WG-PSf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="aTS-E0-WMI" firstAttribute="centerX" secondItem="kNe-cl-adc" secondAttribute="centerX" id="2ew-8u-3Oc"/>
+                            <constraint firstItem="4Zi-F9-o0M" firstAttribute="trailing" secondItem="aTS-E0-WMI" secondAttribute="trailing" constant="20" id="7uk-ru-Vlz"/>
+                            <constraint firstItem="aTS-E0-WMI" firstAttribute="leading" secondItem="4Zi-F9-o0M" secondAttribute="leading" constant="20" id="F2O-w6-3uN"/>
+                            <constraint firstItem="aTS-E0-WMI" firstAttribute="centerY" secondItem="kNe-cl-adc" secondAttribute="centerY" id="VsL-ke-D3G"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4Zi-F9-o0M"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="h4L-bZ-A8t"/>
+                    <connections>
+                        <outlet property="sentNotificationLabel" destination="aTS-E0-WMI" id="5Og-PF-yeF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ogh-2l-tx3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="923" y="142"/>
+        </scene>
+    </scenes>
+</document>

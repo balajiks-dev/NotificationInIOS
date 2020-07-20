@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>422877160928-qv5j2r0s1otum7hr46jce07p3pt9v1rj.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.422877160928-qv5j2r0s1otum7hr46jce07p3pt9v1rj</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA4e6eLk0W7HmJ72bPBTYM1yEzdddFmVzw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>422877160928</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.remote.firebasenotification</string>
+	<key>PROJECT_ID</key>
+	<string>remotenotification-bb90a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>remotenotification-bb90a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:422877160928:ios:084dc46a7e44c1998e3785</string>
+	<key>DATABASE_URL</key>
+	<string>https://remotenotification-bb90a.firebaseio.com</string>
+</dict>
+</plist>
